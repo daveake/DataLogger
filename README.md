@@ -1,10 +1,10 @@
-# FlexTrack 
-Flexible Arduino-based tracker software for RTTY, LoRa and APRS.
+# DataLogger
+AVR Data Logger for UBlox GPS, BME280, ADXL345
 
+Logs GPS data at up to 18Hz to a pre-formatted (FAT16/32) SD card.
 
-Using #defines in the main file, this can be configured for any combination
-of RTTY (using NTX2 or MTX2), LoRa (RFM98) and APRS (HX1).  Various
-parameters such as transmit frequency can be adjusted also.
+Log is in binary format and there is an accompanying binary-->CSV program for Windows.
 
-The default configuration is for the HABduino tracker - see http://www.habduino.org/,
-using RTTY and APRS.
+The logger has default parameters (e.g. for log rate) which are stored in the AVR EEPROM.
+
+Parameters can be changed via a menu system on the serial port.  Press ESC twice on the port to enter the menu.
